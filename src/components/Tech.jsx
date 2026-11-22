@@ -1,19 +1,36 @@
+
 import React from "react";
 
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
+import { styles } from "../styles";
+import { motion } from "framer-motion";
+import { textVariant } from "../utils/motion";
 
 const Tech = () => {
   return (
-    <div className='flex flex-row flex-wrap justify-center gap-10'>
-      {technologies.map((technology) => (
-        <div className='w-28 h-28' key={technology.name}>
-          <BallCanvas icon={technology.icon} />
-        </div>
-      ))}
-    </div>
+    <>
+      <motion.div variants={textVariant()}>
+        <p className={styles.sectionSubText}>My technical toolkit</p>
+        <h2 className={styles.sectionHeadText}>Skills & Technologies.</h2>
+      </motion.div>
+
+      <p className="mt-4 max-w-3xl text-secondary text-[17px] leading-[30px]">
+        These are the technologies and tools I have been learning and using
+        to build web applications, work with databases, and explore
+        interactive development.
+      </p>
+
+      <div className="mt-12 flex flex-row flex-wrap justify-center gap-10">
+        {technologies.map((technology) => (
+          <div className="w-28 h-28" key={technology.name}>
+            <BallCanvas icon={technology.icon} />
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 
-export default SectionWrapper(Tech, "");
+export default SectionWrapper(Tech, "tech");

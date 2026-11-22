@@ -27,11 +27,16 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${
-        styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
-      }`}
+      className={`
+        ${styles.paddingX}
+        w-full flex items-center py-5 fixed top-0 z-20
+        transition-all duration-300
+        ${
+          scrolled
+            ? "bg-primary/90 backdrop-blur-xl border-b border-emerald-500/20"
+            : "bg-transparent"
+        }
+      `}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
@@ -44,8 +49,8 @@ const Navbar = () => {
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Adrian &nbsp;
-            <span className='sm:block hidden'> | JavaScript Mastery</span>
+            Htet Htet &nbsp;
+            <span className='sm:block hidden'> | My Portfolio</span>
           </p>
         </Link>
 

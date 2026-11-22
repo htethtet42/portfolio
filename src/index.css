@@ -202,3 +202,103 @@
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
 }
+/* ========================================
+   HTET HTET - EMERALD PORTFOLIO THEME
+======================================== */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  background: #030712;
+  color: #f3f4f6;
+}
+
+/* Emerald glowing text */
+.emerald-text {
+  background: linear-gradient(
+    90deg,
+    #6ee7b7,
+    #10b981,
+    #34d399
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(16, 185, 129, 0.05);
+  border: 1px solid rgba(52, 211, 153, 0.2);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 20px;
+}
+
+/* Emerald glowing border */
+.emerald-border {
+  border: 1px solid rgba(52, 211, 153, 0.35);
+  box-shadow:
+    0 0 15px rgba(16, 185, 129, 0.08),
+    inset 0 0 15px rgba(16, 185, 129, 0.03);
+}
+
+/* Futuristic grid background */
+.emerald-grid {
+  background-image:
+    linear-gradient(
+      rgba(16, 185, 129, 0.06) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(16, 185, 129, 0.06) 1px,
+      transparent 1px
+    );
+  background-size: 50px 50px;
+}
+
+/* Soft emerald glow */
+.emerald-glow {
+  box-shadow:
+    0 0 20px rgba(16, 185, 129, 0.2),
+    0 0 60px rgba(16, 185, 129, 0.08);
+}
+
+/* Interactive hover effect */
+.emerald-hover {
+  transition: all 0.3s ease;
+}
+
+.emerald-hover:hover {
+  transform: translateY(-5px);
+  border-color: #10b981;
+  box-shadow: 0 10px 35px rgba(16, 185, 129, 0.15);
+}
+
+/* Emerald scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #047857;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+
+::selection {
+  background: #10b981;
+  color: #030712;
+}
+

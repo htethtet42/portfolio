@@ -1,29 +1,22 @@
+
 import {
-  mobile,
   backend,
-  creator,
   web,
+  creator,
+  mobile,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
-  nodejs,
-  mongodb,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
 } from "../assets";
+
+// ==========================================
+// NAVIGATION
+// ==========================================
 
 export const navLinks = [
   {
@@ -31,8 +24,12 @@ export const navLinks = [
     title: "About",
   },
   {
+    id: "education",
+    title: "Education",
+  },
+  {
     id: "work",
-    title: "Work",
+    title: "Works",
   },
   {
     id: "contact",
@@ -40,24 +37,32 @@ export const navLinks = [
   },
 ];
 
+// ==========================================
+// SERVICES
+// ==========================================
+
 const services = [
   {
-    title: "Web Developer",
+    title: "Full-Stack Development",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Frontend Development",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Backend Development",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Database Integration",
     icon: creator,
   },
 ];
+
+// ==========================================
+// TECHNOLOGIES
+// ==========================================
 
 const technologies = [
   {
@@ -73,193 +78,151 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "PHP",
+    icon: backend,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "MySQL",
+    icon: backend,
+  },
+  {
+    name: "Go",
+    icon: backend,
+  },
+  {
+    name: "Supabase",
+    icon: backend,
   },
   {
     name: "Three JS",
     icon: threejs,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
-const experiences = [
-  {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-];
+// ==========================================
+// EXPERIENCE
+// No professional employment history added yet.
+// ==========================================
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
+const experiences = [];
+
+// ==========================================
+// TESTIMONIALS
+// Add genuine testimonials when available.
+// ==========================================
+
+const testimonials = [];
+
+// ==========================================
+// PERSONAL PROJECTS
+// ==========================================
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "MTU Fresher Voting System",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A university voting platform developed to support MTU fresher welcome awards. It includes candidate management, voting functionality, election categories, administrative controls and result analytics, using React and a Go backend connected to Supabase (PostgreSQL 17).This project was developed by a team of five members. I was responsible for the frontend design and contributed to backend development, while the database was designed and implemented by our mentor.",
+
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "golang",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Supabase (PostgreSQL 17)",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+
+    image: "/projects/mtu-voting.png",
+
+    source_code_link: "https://github.com/htethtet42/welcome-voting-mtu",
+    live_demo_link: "https://welcome-voting-mtu-azure.vercel.app/",
   },
+
   {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
+  name: "PostFlow",
+  description:
+    "A PHP and MySQL-based content management and blogging platform that allows users to create, submit, edit, and manage their own posts. It features user registration, login and logout, and role-based access control with Guest, User, and Admin roles. Users can submit posts for review, edit their content, and track submission statuses such as Pending, Approved, and Rejected. Administrators can manage submissions through a centralized dashboard, review content, and approve or reject posts before publication. The platform also includes rich-text editing for content formatting and a responsive interface for a smooth experience across desktop and mobile devices.",
+
+  tags: [
+    {
+      name: "php",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "mysql",
+      color: "green-text-gradient",
+    },
+    {
+      name: "bootstrap",
+      color: "pink-text-gradient",
+    },
+  ],
+
+  image: "/projects/postflow.png",
+
+  source_code_link: "https://github.com/htethtet42/phpProject",
+  live_demo_link: "https://postflow-project.free.nf/",
+},
+
+  
+{
+  name: "Explore Mandalay",
+  description:
+    "A dynamic web application developed using JavaServer Pages (JSP) and Apache Tomcat. The project focuses on showcasing Mandalay and helping users explore information about the city through a Java-based web application.",
+
+  tags: [
+    {
+      name: "java",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "jsp",
+      color: "green-text-gradient",
+    },
+    {
+      name: "tomcat",
+      color: "pink-text-gradient",
+    },
+  ],
+
+  image: "/projects/mandalay.png",
+
+  source_code_link: "https://github.com/htethtet42/MandalayProject",
+  live_demo_link: "https://mandalayproject.dockhosting.cloud",
+},
+
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+// ==========================================
+// EXPORTS
+// ==========================================
+
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+};
