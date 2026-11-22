@@ -6,7 +6,7 @@ This portfolio introduces me as an aspiring Full-Stack Developer, showcases my a
 
 ## 🚀 Live Demo
 
-**Portfolio:** [View My Portfolio](YOUR_VERCEL_DEPLOYMENT_URL)
+**Portfolio:** [View My Portfolio](https://portfolio-9hbb.vercel.app/)
 
 ## 👩‍💻 About Me
 
@@ -65,6 +65,7 @@ project_3D_developer_portfolio/
 │
 ├── src/
 │   ├── assets/
+│   │   ├── tech/
 │   │
 │   ├── components/
 │   │   ├── canvas/
@@ -79,6 +80,7 @@ project_3D_developer_portfolio/
 │   │   ├── Education.jsx
 │   │   ├── Tech.jsx
 │   │   ├── Works.jsx
+│   │   ├── index.js
 │   │   ├── Contact.jsx
 │   │   └── Loader.jsx
 │   │
@@ -188,7 +190,7 @@ The generated production files will be available in the `dist/` directory.
 
 ## 🌍 Deployment
 
-This portfolio is designed for deployment using [Vercel](https://vercel.com/).
+This portfolio is designed for deployment using [Vercel](https://portfolio-9hbb.vercel.app/).
 
 General deployment steps:
 
@@ -220,7 +222,7 @@ My goal is to demonstrate my frontend development abilities, creativity, underst
 - University: Mandalay Technological University
 - Location: Mandalay, Myanmar
 - GitHub: [htethtet42](https://github.com/htethtet42)
-- Portfolio: [Live Website](YOUR_VERCEL_DEPLOYMENT_URL)
+- Portfolio: [Live Website](https://portfolio-9hbb.vercel.app/)
 
 ---
 
